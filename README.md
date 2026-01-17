@@ -1,4 +1,4 @@
-# Nictotine+ for Raspberry Pi
+# Headless Nicotine+ with VNC for Raspberry Pi (ARM64) and AMD64 Processors
 
 Yet another [realies/soulseek-docker](https://github.com/realies/soulseek-docker ) fork! 
 kokmok made a great RPI fork, but unfortunately hasn't updated it in 5 years, so that's where this repo comes in! Latest image uses Nicotine+ v3.3.2, and the Dockerfile allows for rebuilding with future versions. Huge thanks again to [realies](https://github.com/realies) for all the hard work of getting soulseek to work over noVNC, and [kokmok](https://github.com/kokmok/rpi-nicotine-novnc) for giving me clues to get this working.
@@ -96,4 +96,7 @@ Use the following commands to build it from the Dockerfiles
 64-Bit:
 `docker build --platform linux/arm64 -t hockeygoalie35/nicotine-novnc-rpi:arm64 . -f ./Dockerfile-arm64`
 
+AMD64 (Intel/AMD processors)
+64-Bit:
+`docker build --platform linux/arm64 -t hockeygoalie35/nicotine-novnc-rpi:arm64 . -f ./Dockerfile-arm64`
 
